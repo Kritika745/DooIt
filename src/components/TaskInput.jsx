@@ -5,7 +5,7 @@ import { useDispatch } from "react-redux"
 import { addTask } from "../store/actions/taskActions"
 import { Bell, Repeat, Calendar, Clock, X } from "lucide-react"
 
-const TaskInput = () => {
+const TaskInput = ({ darkMode }) => {
   const dispatch = useDispatch()
   const [taskText, setTaskText] = useState("")
   const [priority, setPriority] = useState("medium")
@@ -64,16 +64,16 @@ const TaskInput = () => {
 
   return (
     <div className="mb-8">
-      <form onSubmit={handleSubmit} className="bg-[#EEF6EF] rounded-lg p-4">
+      <form onSubmit={handleSubmit} className={`rounded-lg p-4 ${darkMode ? 'bg-[#496E4B33]' : 'bg-[#EEF6EF]'}`}>
         <input
           type="text"
           value={taskText}
           onChange={(e) => setTaskText(e.target.value)}
-          className="w-full bg-transparent border-none text-gray-900 placeholder-gray-500 focus:outline-none focus:ring-0 text-sm"
+          className={`w-full bg-transparent border-none${darkMode ? 'text-white placeholder-gray-400' : 'text-gray-900 placeholder-gray-500'} focus:outline-none focus:ring-0 text-sm`}
           placeholder="Add A Task"
         />
 
-        <div className="flex items-center justify-between mt-4">
+        <div className="flex flex-wrap items-center justify-between mt-4">
           <div className="flex items-center gap-2">
             {/* Reminder Button */}
             <button
@@ -103,7 +103,7 @@ const TaskInput = () => {
             </button>
 
             {/* Priority Buttons */}
-            <div className="flex items-center border-l border-gray-200 ml-2 pl-2">
+            <div className="flex flex-wrap items-center border-l border-gray-200 ml-2 pl-2">
               <span className="text-xs text-gray-500 mr-1">Priority:</span>
               <button
                 type="button"
@@ -138,7 +138,7 @@ const TaskInput = () => {
           <button
             type="submit"
             disabled={!taskText.trim()}
-            className="px-4 py-1.5 bg-green-500 text-white rounded-md text-sm font-medium hover:bg-green-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-500 disabled:opacity-50 disabled:cursor-not-allowed"
+            className="px-4 py-1.5 bg-[#35793729] text-[#357937] rounded-md text-sm font-medium hover:bg-green-300 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-500 disabled:opacity-50 disabled:cursor-not-allowed"
           >
             ADD TASK
           </button>

@@ -7,12 +7,13 @@ import { updateTask, deleteTask } from "../store/actions/taskActions"
 import { toggleImportantAndSave } from "../store/actions/taskActions"
 import TaskInput from "./TaskInput"
 import TaskList from "./TaskList"
-// import WeatherWidget from "./WeatherWidget"
+import WeatherWidget from "./WeatherWidget"
 import { fetchWeather } from "../store/thunks/weatherThunk"
 import { Menu, X, Search, Sun, Moon, InfoIcon, List, AlertTriangle, CheckCircle,AlertCircle, Grid, LogOut, ClipboardList, Calendar, Star, Map, Users, Plus, Bell , Repeat, Trash2 } from 'lucide-react'
 import { formatDistanceToNow } from 'date-fns'
 
-const Dashboard = () => {
+
+ const Dashboard = () => {
   const dispatch = useDispatch()
   const { user } = useSelector((state) => state.auth)
   const { tasks } = useSelector((state) => state.tasks)
@@ -530,7 +531,7 @@ const handleFilterChange = (filter) => {
               
               
              <div className="flex items-center space-x-4">
-                {/* <WeatherWidget /> */}
+                <WeatherWidget /> 
 
 
                   {/* Expandable Search */}
