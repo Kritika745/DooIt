@@ -16,17 +16,6 @@ body {
   color: var(--foreground);
 }
 
-.task-priority-high {
-  @apply border-l-4 border-red-500;
-}
-
-.task-priority-medium {
-  @apply border-l-4 border-yellow-500;
-}
-
-.task-priority-low {
-  @apply border-l-4 border-green-500;
-}
 
 .auth-container {
   background-image: url("/placeholder.svg?height=1080&width=1920");

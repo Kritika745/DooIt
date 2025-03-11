@@ -124,7 +124,7 @@ const TaskList = ({ darkMode, viewMode, searchQuery, onTaskClick , toggleImporta
         <div>
           {/* Incomplete Tasks Section */}
           {incompleteTasks.length > 0 && (
-            <ul className={`divide-y ${darkMode ? "divide-gray-700" : "divide-gray-200"} mb-6`}>
+            <ul className={`divide-y ${darkMode ? "divide-gray-700" : "divide-gray-300"} mb-6`}>
               {incompleteTasks.map((task) => (
                 <TaskItem
                   key={task.id}

@@ -530,8 +530,8 @@ const handleFilterChange = (filter) => {
               </div>
               
               
-             <div className="flex items-center space-x-4">
-                <WeatherWidget /> 
+             <div className="flex items-center md:space-x-4">
+                <WeatherWidget darkMode={darkMode}/> 
 
 
                   {/* Expandable Search */}
@@ -644,9 +644,9 @@ const handleFilterChange = (filter) => {
 
         <main className={`max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 ${sidebarOpen ? 'md:ml-64' : ''} ${rightSidebarOpen ? "md:mr-80" : ""} transition-all duration-300`}>
 
-          <div className={`${darkMode ? 'bg-[#242424]' : 'bg-white'} rounded-lg shadow overflow-hidden`}>
+          <div className={`${darkMode ? 'bg-[#242424]' : 'bg-white'} rounded-lg  overflow-hidden`}>
             <div className="p-6">
-              <h2 className={`text-xl font-semibold ${darkMode ? 'text-gray-200' : 'text-[#242424]'} `}>My Tasks</h2>
+              <h2 className={`text-sm  ${darkMode ? ' text-[#97F69B]' : 'text-gray-500'} `}>To Do</h2>
               <hr className="border-gray-200 mb-6"/>
               <TaskInput darkMode={darkMode} />
               <TaskList

@@ -1,7 +1,7 @@
 import { fetchWeatherStart, fetchWeatherSuccess, fetchWeatherFailure } from "../reducers/weatherReducer"
 
 // Replace with your own API key from OpenWeatherMap
-const API_KEY = "YOUR_OPENWEATHERMAP_API_KEY"
+const API_KEY = "2de65452a0b35ca5029bdc3904438eb8"
 
 export const fetchWeather = () => async (dispatch) => {
   dispatch(fetchWeatherStart())

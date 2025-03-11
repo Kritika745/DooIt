@@ -35,7 +35,7 @@ const TaskItem = ({ task, handleToggle, onTaskClick, darkMode, toggleImportant }
 
   return (
     <li
-      className={`py-4 ${task.completed ? "opacity-60" : ""} task-priority-${task.priority}  cursor-pointer`}
+      className={`py-4 ${task.completed ? "opacity-60" : ""}  cursor-pointer`}
       onClick={handleItemClick}
     >
       <div className="pl-3 pr-1 py-1">

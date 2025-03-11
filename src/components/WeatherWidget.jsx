@@ -1,6 +1,6 @@
 import { useSelector } from "react-redux"
 
-const WeatherWidget = () => {
+const WeatherWidget = ({darkMode}) => {
   const { data, loading, error } = useSelector((state) => state.weather)
 
   if (loading) {
@@ -48,7 +48,7 @@ const WeatherWidget = () => {
   }
 
   return (
-    <div className="flex items-center bg-white rounded-md px-3 py-1 shadow-sm border border-gray-200">
+    <div className={`hidden md:flex items-center ${darkMode ? "bg-[#232323]" : "bg-white"} rounded-md px-3 py-1 shadow-sm border border-gray-200`}>
       <img
         src={getWeatherIcon(data.weather[0].icon) || "/placeholder.svg"}
         alt={data.weather[0].description}
