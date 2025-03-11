@@ -25,12 +25,12 @@ DooIt is an advanced React To-Do application built to demonstrate proficiency in
 - **Local Storage API**: For data persistence
 - **OpenWeatherMap API**: For weather data integration
 
+## Screenshots
+
 
 ## Try it out
+https://doo-it-delta.vercel.app/
 
-```sh
-git clone https://github.com/your-username/brainquest.git
-```
 
 ## Running the App Locally
 
