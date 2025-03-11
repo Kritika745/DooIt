@@ -34,14 +34,14 @@ git clone https://github.com/your-username/brainquest.git
 
 ## Running the App Locally
 
-To run BrainQuest on your local machine, follow these steps:
+To run DooIt on your local machine, follow these steps:
 
 1. **Clone the repository**:
    Make sure you have **Git** installed. Run the following command:
 
    ```sh
-   git clone https://github.com/your-username/brainquest.git
-   cd brainquest
+   git clone https://github.com/Kritika745/DooIt.git
+   cd DooIt
    ```
 
 2. **Install dependencies**:
