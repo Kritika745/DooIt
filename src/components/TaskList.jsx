@@ -99,7 +99,7 @@ const TaskList = ({ darkMode, viewMode, searchQuery, onTaskClick , toggleImporta
   const completedTasks = sortByPriority(filteredTasks.filter((task) => task.completed))
 
   return (
-    <div>
+    <div className="border-t border-gray-300">
       {filteredTasks.length === 0 ? (
         <div className="text-center py-8">
           <svg
@@ -152,11 +152,11 @@ const TaskList = ({ darkMode, viewMode, searchQuery, onTaskClick , toggleImporta
           {/* Completed Tasks Section */}
           {completedTasks.length > 0 && (
             <>
-              <div className={`flex items-center py-2 mb-2 ${darkMode ? "text-gray-400" : "text-gray-500"}`}>
+              <div className={`flex items-center py-2  border-b border-gray-300 ${darkMode ? "text-gray-400" : "text-gray-500"}`}>
                 <span className="px-3 text-sm font-medium">Completed</span>
               </div>
 
-              <ul className={`divide-y ${darkMode ? "divide-gray-700" : "divide-gray-200"}`}>
+              <ul className={`divide-y ${darkMode ? "divide-gray-700" : "divide-gray-300"}`}>
                 {completedTasks.map((task) => (
                   <TaskItem
                     key={task.id}
