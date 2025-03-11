@@ -27,6 +27,10 @@ DooIt is an advanced React To-Do application built to demonstrate proficiency in
 
 ## Screenshots
 
+![img1](/public/SS1.png)
+![img2](/public/SS2.png)
+![img3](/public/SS3.png)
+
 
 ## Try it out
 https://doo-it-delta.vercel.app/
