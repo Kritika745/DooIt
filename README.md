@@ -1,6 +1,6 @@
-# Project Overview
+# DooIt
 
-This project is an advanced React To-Do application built to demonstrate proficiency in modern web development technologies and practices. The application features a comprehensive task management system with user authentication, priority-based task organization, and weather API integration.
+DooIt is an advanced React To-Do application built to demonstrate proficiency in modern web development technologies and practices. The application features a comprehensive task management system with user authentication, priority-based task organization, and weather API integration.
 
 ## Key Features
 
@@ -25,4 +25,31 @@ This project is an advanced React To-Do application built to demonstrate profici
 - **Local Storage API**: For data persistence
 - **OpenWeatherMap API**: For weather data integration
 
-## Deployed link
+
+## Try it out
+
+```sh
+git clone https://github.com/your-username/brainquest.git
+```
+
+## Running the App Locally
+
+To run BrainQuest on your local machine, follow these steps:
+
+1. **Clone the repository**:
+   Make sure you have **Git** installed. Run the following command:
+
+   ```sh
+   git clone https://github.com/your-username/brainquest.git
+   cd brainquest
+   ```
+
+2. **Install dependencies**:
+   ```sh
+   npm install
+   ```
+
+3. **Run the app**:
+   ```sh
+   npm run dev
+   ```
